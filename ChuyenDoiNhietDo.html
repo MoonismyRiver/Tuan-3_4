@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi nhiệt độ</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Chuyển độ F sang độ C</h1>
+<h3>Nhập giá trị cần chuyển vào ô :</h3>
+
+<p>
+    <label> Độ F : </label>
+    <input id="inputF" type="number" placeholder="Độ F"
+           oninput="Chuyendoi(this.value)"
+          >
+</p>
+<p>Celsius: <span id="outputC"></span></p>
+
+<script>
+    function Chuyendoi(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("outputC").innerHTML = (valNum - 32) / 1.8;
+    }
+</script>
+
+</body>
+</html>
