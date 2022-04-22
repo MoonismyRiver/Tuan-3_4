@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa</title>
+</head>
+<body>
+<script>
+    function tinhgiaithua(a) {
+        if (a == 2) {
+            return 2;
+        } else
+            T = a * tinhgiaithua(a - 1);
+        return T;
+    }
+    let a=prompt("nhập số tính giai thừa : ");
+    document.write("kết quả là : "+tinhgiaithua(a));
+</script>
+</body>
+</html>

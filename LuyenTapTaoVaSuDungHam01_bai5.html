@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm chòm sao</title>
+</head>
+<body>
+<script>
+    let ngoisao = ['Polaris','Aldebaran', 'Deneb, Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let chomsao = ['UrsaMinor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa', 'MajorLeo'];
+
+    function Star(a) {
+        let check = true;
+        for (let i = 0; i < ngoisao.length; i++
+        ) {
+            if (a == ngoisao[i]) {
+                check = false;
+                alert('Ngôi sao này thuộc chòm sao : '+chomsao[i]);
+                break;
+            }
+        }
+        if (check) {
+            alert("không có!");
+        }
+
+    }
+
+    let a = prompt('tên ngôi sao : ');
+    Star(a);
+
+</script>
+</body>
+</html>

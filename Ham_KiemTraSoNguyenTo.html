@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra sô nguyên tố</title>
+</head>
+<body>
+<script>
+    function isPrime(N) {
+        let i = 2;
+        let check = true;
+        for (; i <= (N / 2); i++) {
+            if (N % i == 0) {
+                check = false;
+                break;
+            }
+        }
+        if (check) {
+            document.write(N + ',');
+        }
+
+    }
+    let N =prompt("nhập số cuối");
+    for (let i = 2; i <= N; i++) {
+        isPrime(i);
+    }
+</script>
+</body>
+</html>
